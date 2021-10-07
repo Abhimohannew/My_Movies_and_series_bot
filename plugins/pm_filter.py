@@ -100,10 +100,10 @@ async def filter(client, message):
         if API_KEY:
             poster=await get_poster(search)
             if poster:
-                await message.reply_photo(photo=poster, caption=f"<b>🎬 Title : {search}</b>\n🌟 7.5/10 | IMDb\n🎭 Genres: Document, 🔪 Drama, Thriller\n⚡️𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐁𝐲:-{update.from_user.mention}", reply_markup=InlineKeyboardMarkup(buttons))
+                await message.reply_photo(photo=poster, caption=f"<b>🎬 Title : {search}</b>\n🌟 7.5/10 | IMDb\n🎭 Genres: Document, 🔪 Drama, Thriller", reply_markup=InlineKeyboardMarkup(buttons))
 
             else:
-                await message.reply_text(f"<b>🎬 Title : {search}</b>\n🌟 8.7/10 | IMDb\n🎭 Genres: Document, Drama, Climax Thriller\n⚡️𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐁𝐲:-{update.from_user.mention}", disable_web_page_preview=True, reply_markup=InlineKeyboardMarkup(buttons))
+                await message.reply_text(f"<b>🎬 Title : {search}</b>\n🌟 8.7/10 | IMDb\n🎭 Genres: Document, Drama, Climax Thriller", disable_web_page_preview=True, reply_markup=InlineKeyboardMarkup(buttons))
             return
 @Client.on_message(filters.text & filters.group & filters.incoming & filters.chat(AUTH_GROUPS) if AUTH_GROUPS else filters.text & filters.group & filters.incoming)
 async def group(client, message):
