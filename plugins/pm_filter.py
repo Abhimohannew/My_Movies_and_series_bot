@@ -63,8 +63,8 @@ async def filter(client, message):
             return
 
         if not btn:
-            await client.reply_text(chat_id=message.from_user.id, message="Check Your Spelling")
             return
+
 
         if len(btn) > 10: 
             btns = list(split_list(btn, 10)) 
