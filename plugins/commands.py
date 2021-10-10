@@ -186,7 +186,7 @@ async def start(bot, cmd):
 
             photo="https://telegra.ph/file/d5b15eb5b5ebf67d4c8df.jpg",
 
-            caption=f"𝐘𝐨..𝐘𝐨..{cmd.from_user.mention} 🙋,I'm Powerful Auto-Filter Bot You Can Use Me As A Auto-filter in Your Group ....\n\nIts Easy To Use Me; Just Add Me To Your Group As Admin, Thats All, i will Provide Movies There...🤓\n\n⚠️More Help Check Help Button Below\n\n©️MᴀɪɴᴛᴀɪɴᴇD Bʏ   <a href=tg://user?id=927423870>FF Group</a>",
+            caption=START_MSG,
 
             reply_markup=InlineKeyboardMarkup(
 
