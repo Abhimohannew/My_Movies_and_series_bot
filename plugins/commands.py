@@ -194,21 +194,21 @@ async def start(bot, cmd):
 
                     [
 
-                        InlineKeyboardButton('❔ How To Use Me ❔', url='https://t.me/ff_new_movies_group')
+                        InlineKeyboardButton('❔ 𝙷𝚘𝚠 𝚃𝚘 𝚄𝚜𝚎 𝙼𝚎 ❔', url='https://t.me/ff_new_movies_group')
 
                     ],[                    
 
-                        InlineKeyboardButton("Search Here🔎", switch_inline_query_current_chat=''),
+                        InlineKeyboardButton("𝐒𝐞𝐚𝐫𝐜𝐡 𝐇𝐞𝐫𝐞 🔎", switch_inline_query_current_chat=''),
 
-                        InlineKeyboardButton("Group 🍿", url='https://t.me/ff_new_movies_group')
+                        InlineKeyboardButton("𝐆𝐫𝐨𝐮𝐩 🍿", url='https://t.me/ff_new_movies_group')
 
                     ],
 
                     [
 
-                        InlineKeyboardButton('MYdev👩‍💻', url='https://t.me/ff_new_movies_group'),
+                        InlineKeyboardButton('𝓜𝔂 𝓓𝓮𝓿🧑‍💻', url='https://t.me/ff_new_movies_group'),
 
-                        InlineKeyboardButton("About😎", callback_data="about")
+                        InlineKeyboardButton("𝐀𝐛𝐨𝐮𝐭🙂", callback_data="about")
 
                     ],
 
