@@ -61,9 +61,7 @@ async def filter(client, message):
         else:
             await client.send_sticker(chat_id=message.from_user.id, sticker='CAADBQADMwIAAtbcmFelnLaGAZhgBwI')
             
-        else:
-            await message.reply("Check Your Spelling", Show_alert=True)
-            return
+        
 
         if not btn:
             return
