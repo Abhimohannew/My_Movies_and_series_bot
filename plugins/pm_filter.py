@@ -65,8 +65,8 @@ async def filter(client, message):
             
             
         if not btn:
-            await client.send_message(chat_id=message.from_user.id,message="Check Your Spelling", Show_alert=True)
             return
+            
 
 
         if len(btn) > 10: 
