@@ -63,7 +63,7 @@ async def filter(client, message):
             
         else:
             await asyncio.sleep(20) 
-            await client.reply("Check Your Spelling", Show_alert=True)
+            await client.send_message(chat_id=message.from_user.id,message="Check Your Spelling", Show_alert=True)
         if not btn:
             return
 
