@@ -59,7 +59,10 @@ async def filter(client, message):
                     [InlineKeyboardButton(text=f"{filename}",callback_data=f"subinps#{file_id}")]
                     )
         else:
-            await client.send_sticker(chat_id=message.from_user.id, sticker='CAADBQADBwADNXucI3Zy4ve36dgfAg')
+            await client.send_sticker(chat_id=message.from_user.id, sticker='CAADBQADMwIAAtbcmFelnLaGAZhgBwI')
+            
+        else:
+            await message.reply("Check Your Spelling", Show_alert=True)
             return
 
         if not btn:
