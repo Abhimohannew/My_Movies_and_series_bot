@@ -135,7 +135,7 @@ async def group(client, message):
 
             text=f"""
 
-👋Hey {message.from_user.id}
+👋Hey Bruh
 
 If this movie is not in our database you will not get that movie..
 
