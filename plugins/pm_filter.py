@@ -134,12 +134,9 @@ async def group(client, message):
             chat_id = message.chat.id,
 
             text=f"""
-
 <b>Sorry, No Movie/Series Related to the Given Word Was Found 🥺
 
-Please Go to Google and Confirm the Correct Spelling 🙏
-
-Click Here To 👉 <a href="https://www.google.com">🔎 Search</a>
+Please Go to Google and Confirm the Correct Spelling 🙏</b>
             parse_mode="html",
 
             reply_to_message_id=message.message_id
