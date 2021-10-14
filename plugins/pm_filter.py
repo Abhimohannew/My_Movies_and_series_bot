@@ -137,22 +137,17 @@ async def group(client, message):
 
 👋Hey Bruh
 
+If this movie is not in our database you will not get that movie..
 
-Sorry, No Movie/Series Related to the Given Word Was Found 🥺
+Otherwise, <b>the spelling of the name of the requested movie may not be correct...
 
-Please Go to Google and Confirm the Correct Spelling 🙏"""
+So you go to google and check the spelling of the name of the movie you want.</b>
 
+ഈ സിനിമ ഞങ്ങളുടെ ഡാറ്റാബേസിൽ ഇല്ലെങ്കിൽ നിങ്ങൾക്ക് ഈ സിനിമ ലഭിക്കില്ല
 
+അല്ലെങ്കിൽ, <b>അഭ്യർത്ഥിച്ച സിനിമയുടെ പേരിന്റെ അക്ഷരവിന്യാസം ശരിയായിരിക്കില്ല ...
 
-
-
-
-
-
-
-
-
-
+അതിനാൽ നിങ്ങൾ ഗൂഗിളിൽ പോയി നിങ്ങൾക്ക് ആവശ്യമുള്ള സിനിമയുടെ പേരിന്റെ സ്പെല്ലിംഗ് പരിശോധിക്കുക</b>""",
 
             parse_mode="html",
 
