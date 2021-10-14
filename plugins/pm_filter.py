@@ -136,7 +136,8 @@ async def group(client, message):
             text=f"""
 Sorry, No Movie/Series Related to the Given Word Was Found 🥺
 
-<b>Please Go to Google and Confirm the Correct Spelling 🙏""",
+<b>Please Go to Google and Confirm the Correct Spelling 🙏</b>
+Click Here To 👉 <a href="https://www.google.com">🔎 Search</a>""",
             parse_mode="html",
 
             reply_to_message_id=message.message_id
