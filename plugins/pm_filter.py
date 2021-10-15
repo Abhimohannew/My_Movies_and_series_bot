@@ -142,7 +142,7 @@ Click Here To 👉 <a href="https://www.google.com">🔎 Search</a>""",
             parse_mode="html",
 
             reply_to_message_id=message.message_id
-            del_in = 20,
+            
         )    
             return
         if not btn:
