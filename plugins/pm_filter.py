@@ -276,7 +276,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 buttons = data['buttons'][int(index)-1].copy()
 
                 buttons.append(
-                    [InlineKeyboardButton("👈 𝗕𝗮𝗰𝗸", callback_data=f"back_{int(index)-1}_{keyword}"),InlineKeyboardButton("NEXT==>", callback_data=f"next_{int(index)-1}_{keyword}")]
+                    [InlineKeyboardButton("👈 𝗕𝗮𝗰𝗸", callback_data=f"back_{int(index)-1}_{keyword}"),InlineKeyboardButton("𝗡𝗲𝘅𝘁 👉", callback_data=f"next_{int(index)-1}_{keyword}")]
                 )
                 buttons.append(
                     [InlineKeyboardButton(f"📃 Pages {int(index)}/{data['total']}", callback_data="pages")]
