@@ -90,7 +90,7 @@ async def filter(client, message):
         buttons = data['buttons'][0].copy()
 
         buttons.append(
-            [InlineKeyboardButton(text="NEXT==>",callback_data=f"next_0_{keyword}")]
+            [InlineKeyboardButton(text="𝗡𝗲𝘅𝘁 👉",callback_data=f"next_0_{keyword}")]
         )    
         buttons.append(
             [InlineKeyboardButton(text=f"📃 Pages 1/{data['total']}",callback_data="pages")]
@@ -99,10 +99,10 @@ async def filter(client, message):
         if API_KEY:
             poster=await get_poster(search)
             if poster:
-                await message.reply_photo(photo=poster, caption=f"<b>🎬 Title : {search}</b>\n🌟 7.5/10 | IMDb\n🎭 Genres: 🔪 Drama, Thriller\n🔸𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐁𝐲: {message.from_user.mention}\n⚜️ Uploaded by: **@ff_new_movies_group**", reply_markup=InlineKeyboardMarkup(buttons))
+                await message.reply_photo(photo=poster, caption=f"<b>🎬 Title : {search}</b>\n🌟 7.5/10 | IMDb\n🎭 Genres: 🔪 Drama, Thriller\n🔸𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐁𝐲: {message.from_user.mention}\n⚜️ Uploaded by: **@ff_new_movies_group**\n💢𝑻𝒊𝒑𝒔:𝗜𝗳 𝘆𝗼𝘂 𝗱𝗼 𝗻𝗼𝘁 𝘀𝗲𝗲 𝘁𝗵𝗲 𝗿𝗲𝗾𝘂𝗲𝘀𝘁𝗲𝗱 𝐌𝐨𝐯𝐢𝐞𝐬/𝐒𝐞𝐫𝐢𝐞𝐬 𝗳𝗶𝗹𝗲, 𝗹𝗼𝗼𝗸 𝗮𝘁 𝗻𝗲𝘅𝘁 𝗽𝗮𝗴𝗲😁", reply_markup=InlineKeyboardMarkup(buttons))
 
             else:
-                await message.reply_text(f"<b>🎬 Title : {search}</b>\n🌟 8.7/10 | IMDb\n🎭 Genres: Drama, Climax Thriller\n🔸𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐁𝐲: {message.from_user.mention}\n⚜️ Uploaded by: **@ff_new_movies_group**", disable_web_page_preview=True, reply_markup=InlineKeyboardMarkup(buttons))
+                await message.reply_text(f"<b>🎬 Title : {search}</b>\n🌟 8.7/10 | IMDb\n🎭 Genres: Drama, Climax Thriller\n🔸𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐁𝐲: {message.from_user.mention}\n⚜️ Uploaded by: **@ff_new_movies_group**\n💢𝑻𝒊𝒑𝒔:𝗜𝗳 𝘆𝗼𝘂 𝗱𝗼 𝗻𝗼𝘁 𝘀𝗲𝗲 𝘁𝗵𝗲 𝗿𝗲𝗾𝘂𝗲𝘀𝘁𝗲𝗱 𝐌𝐨𝐯𝐢𝐞𝐬/𝐒𝐞𝐫𝐢𝐞𝐬 𝗳𝗶𝗹𝗲, 𝗹𝗼𝗼𝗸 𝗮𝘁 𝗻𝗲𝘅𝘁 𝗽𝗮𝗴𝗲😁", disable_web_page_preview=True, reply_markup=InlineKeyboardMarkup(buttons))
             return
 @Client.on_message(filters.text & filters.group & filters.incoming & filters.chat(AUTH_GROUPS) if AUTH_GROUPS else filters.text & filters.group & filters.incoming)
 async def group(client, message):
@@ -159,17 +159,17 @@ Click Here To 👉 <a href="https://www.google.com">🔎 Search</a>""",
             if API_KEY:
                 poster=await get_poster(search)
             if poster:
-                await message.reply_photo(photo=poster, caption=f"<b>🎬 Title : {search}</b>\n🌟 7.5/10 | IMDb\n🎭 Genres: 🔪 Drama, Thriller\n🔸𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐁𝐲: {message.from_user.mention}\n⚜️ Uploaded by: **@ff_new_movies_group**", reply_markup=InlineKeyboardMarkup(buttons))
+                await message.reply_photo(photo=poster, caption=f"<b>🎬 Title : {search}</b>\n🌟 7.5/10 | IMDb\n🎭 Genres: 🔪 Drama, Thriller\n🔸𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐁𝐲: {message.from_user.mention}\n⚜️ Uploaded by: **@ff_new_movies_group**\n💢𝑻𝒊𝒑𝒔:𝗜𝗳 𝘆𝗼𝘂 𝗱𝗼 𝗻𝗼𝘁 𝘀𝗲𝗲 𝘁𝗵𝗲 𝗿𝗲𝗾𝘂𝗲𝘀𝘁𝗲𝗱 𝐌𝐨𝐯𝐢𝐞𝐬/𝐒𝐞𝐫𝐢𝐞𝐬 𝗳𝗶𝗹𝗲, 𝗹𝗼𝗼𝗸 𝗮𝘁 𝗻𝗲𝘅𝘁 𝗽𝗮𝗴𝗲😁", reply_markup=InlineKeyboardMarkup(buttons))
 
             else:
-                await message.reply_text(f"<b>🎬 Title : {search}</b>\n🌟 8.7/10 | IMDb\n🎭 Genres: Drama, Climax Thriller\n🔸𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐁𝐲: {message.from_user.mention}\n⚜️ Uploaded by: **@ff_new_movies_group**", disable_web_page_preview=True, reply_markup=InlineKeyboardMarkup(buttons))
+                await message.reply_text(f"<b>🎬 Title : {search}</b>\n🌟 8.7/10 | IMDb\n🎭 Genres: Drama, Climax Thriller\n🔸𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐁𝐲: {message.from_user.mention}\n⚜️ Uploaded by: **@ff_new_movies_group**\n💢𝑻𝒊𝒑𝒔:𝗜𝗳 𝘆𝗼𝘂 𝗱𝗼 𝗻𝗼𝘁 𝘀𝗲𝗲 𝘁𝗵𝗲 𝗿𝗲𝗾𝘂𝗲𝘀𝘁𝗲𝗱 𝐌𝐨𝐯𝐢𝐞𝐬/𝐒𝐞𝐫𝐢𝐞𝐬 𝗳𝗶𝗹𝗲, 𝗹𝗼𝗼𝗸 𝗮𝘁 𝗻𝗲𝘅𝘁 𝗽𝗮𝗴𝗲😁", disable_web_page_preview=True, reply_markup=InlineKeyboardMarkup(buttons))
             return
 
         data = BUTTONS[keyword]
         buttons = data['buttons'][0].copy()
 
         buttons.append(
-            [InlineKeyboardButton(text="NEXT==>",callback_data=f"next_0_{keyword}")]
+            [InlineKeyboardButton(text="𝗡𝗲𝘅𝘁 👉",callback_data=f"next_0_{keyword}")]
         )    
         buttons.append(
             [InlineKeyboardButton(text=f"📃 Pages 1/{data['total']}",callback_data="pages")]
@@ -178,10 +178,10 @@ Click Here To 👉 <a href="https://www.google.com">🔎 Search</a>""",
         if API_KEY:
             poster=await get_poster(search)
             if poster:
-                await message.reply_photo(photo=poster, caption=f"<b>🎬 Title : {search}</b>\n🌟 7.5/10 | IMDb\n🎭 Genres: 🔪 Drama, Thriller\n⚜️ Uploaded by: **@ff_new_movies_group**", reply_markup=InlineKeyboardMarkup(buttons))
+                await message.reply_photo(photo=poster, caption=f"<b>🎬 Title : {search}</b>\n🌟 7.5/10 | IMDb\n🎭 Genres: 🔪 Drama, Thriller\n⚜️ Uploaded by: **@ff_new_movies_group**\n💢𝑻𝒊𝒑𝒔:𝗜𝗳 𝘆𝗼𝘂 𝗱𝗼 𝗻𝗼𝘁 𝘀𝗲𝗲 𝘁𝗵𝗲 𝗿𝗲𝗾𝘂𝗲𝘀𝘁𝗲𝗱 𝐌𝐨𝐯𝐢𝐞𝐬/𝐒𝐞𝐫𝐢𝐞𝐬 𝗳𝗶𝗹𝗲, 𝗹𝗼𝗼𝗸 𝗮𝘁 𝗻𝗲𝘅𝘁 𝗽𝗮𝗴𝗲😁", reply_markup=InlineKeyboardMarkup(buttons))
 
             else:
-                await message.reply_text(f"<b>🎬 Title : {search}</b>\n🌟 8.7/10 | IMDb\n🎭 Genres: Document, Drama, Climax Thriller\n⚜️ Uploaded by: **@ff_new_movies_group**", disable_web_page_preview=True, reply_markup=InlineKeyboardMarkup(buttons))
+                await message.reply_text(f"<b>🎬 Title : {search}</b>\n🌟 8.7/10 | IMDb\n🎭 Genres: Document, Drama, Climax Thriller\n⚜️ Uploaded by: **@ff_new_movies_group**\n💢𝑻𝒊𝒑𝒔:𝗜𝗳 𝘆𝗼𝘂 𝗱𝗼 𝗻𝗼𝘁 𝘀𝗲𝗲 𝘁𝗵𝗲 𝗿𝗲𝗾𝘂𝗲𝘀𝘁𝗲𝗱 𝐌𝐨𝐯𝐢𝐞𝐬/𝐒𝐞𝐫𝐢𝐞𝐬 𝗳𝗶𝗹𝗲, 𝗹𝗼𝗼𝗸 𝗮𝘁 𝗻𝗲𝘅𝘁 𝗽𝗮𝗴𝗲😁", disable_web_page_preview=True, reply_markup=InlineKeyboardMarkup(buttons))
             return
 
     
@@ -224,7 +224,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 buttons = data['buttons'][int(index)+1].copy()
 
                 buttons.append(
-                    [InlineKeyboardButton("<==BACK", callback_data=f"back_{int(index)+1}_{keyword}")]
+                    [InlineKeyboardButton("👈 𝗕𝗮𝗰𝗸", callback_data=f"back_{int(index)+1}_{keyword}")]
                 )
                 buttons.append(
                     [InlineKeyboardButton(f"📃 Pages {int(index)+2}/{data['total']}", callback_data="pages")]
@@ -238,7 +238,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 buttons = data['buttons'][int(index)+1].copy()
 
                 buttons.append(
-                    [InlineKeyboardButton(" <==BACK", callback_data=f"back_{int(index)+1}_{keyword}"),InlineKeyboardButton("NEXT==>", callback_data=f"next_{int(index)+1}_{keyword}")]
+                    [InlineKeyboardButton("👈 𝗕𝗮𝗰𝗸", callback_data=f"back_{int(index)+1}_{keyword}"),InlineKeyboardButton("NEXT==>", callback_data=f"next_{int(index)+1}_{keyword}")]
                 )
                 buttons.append(
                     [InlineKeyboardButton(f"📃 Pages {int(index)+2}/{data['total']}", callback_data="pages")]
@@ -262,7 +262,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 buttons = data['buttons'][int(index)-1].copy()
 
                 buttons.append(
-                    [InlineKeyboardButton("NEXT==>", callback_data=f"next_{int(index)-1}_{keyword}")]
+                    [InlineKeyboardButton("𝗡𝗲𝘅𝘁 👉", callback_data=f"next_{int(index)-1}_{keyword}")]
                 )
                 buttons.append(
                     [InlineKeyboardButton(f"📃 Pages {int(index)}/{data['total']}", callback_data="pages")]
@@ -276,7 +276,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 buttons = data['buttons'][int(index)-1].copy()
 
                 buttons.append(
-                    [InlineKeyboardButton("<==BACK", callback_data=f"back_{int(index)-1}_{keyword}"),InlineKeyboardButton("NEXT==>", callback_data=f"next_{int(index)-1}_{keyword}")]
+                    [InlineKeyboardButton("👈 𝗕𝗮𝗰𝗸", callback_data=f"back_{int(index)-1}_{keyword}"),InlineKeyboardButton("NEXT==>", callback_data=f"next_{int(index)-1}_{keyword}")]
                 )
                 buttons.append(
                     [InlineKeyboardButton(f"📃 Pages {int(index)}/{data['total']}", callback_data="pages")]
