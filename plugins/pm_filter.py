@@ -183,10 +183,10 @@ Click Here To 👉 <a href="https://www.google.com">🔎 Search</a>""",
         if API_KEY:
             poster=await get_poster(search)
             if poster:
-                await message.reply_photo(photo=poster, caption=f"<b>🎬 Title : {search}</b>\n🌟 7.5/10 | IMDb\n🎭 Genres: 🔪 Drama, Thriller\n🔸𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐁𝐲: {message.from_user.mention}\n⚜️ Uploaded by: **@ff_new_movies_group**", reply_markup=InlineKeyboardMarkup(buttons))
+                await message.reply_photo(photo=poster, caption=f"<b>🎬 Title : {search}</b>\n🌟 7.5/10 | IMDb\n🎭 Genres: 🔪 Drama, Thriller\n⚜️ Uploaded by: **@ff_new_movies_group**", reply_markup=InlineKeyboardMarkup(buttons))
 
             else:
-                await message.reply_text(f"<b>🎬 Title : {search}</b>\n🌟 8.7/10 | IMDb\n🎭 Genres: Document, Drama, Climax Thriller\n🔸𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐁𝐲: {message.from_user.mention}\n⚜️ Uploaded by: **@ff_new_movies_group**", disable_web_page_preview=True, reply_markup=InlineKeyboardMarkup(buttons))
+                await message.reply_text(f"<b>🎬 Title : {search}</b>\n🌟 8.7/10 | IMDb\n🎭 Genres: Document, Drama, Climax Thriller\n⚜️ Uploaded by: **@ff_new_movies_group**", disable_web_page_preview=True, reply_markup=InlineKeyboardMarkup(buttons))
             return
 
     
