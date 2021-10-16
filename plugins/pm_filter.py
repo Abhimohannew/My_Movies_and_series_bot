@@ -60,15 +60,11 @@ async def filter(client, message):
                     )
         else:
             await client.send_sticker(chat_id=message.from_user.id, sticker='CAADBQADZQQAAn-26FfSFJs_uVTHfAI')
-            
-        
-            
-            
+            return
+
         if not btn:
             return
             
-
-
         if len(btn) > 10: 
             btns = list(split_list(btn, 10)) 
             keyword = f"{message.chat.id}-{message.message_id}"
