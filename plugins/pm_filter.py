@@ -60,7 +60,7 @@ async def filter(client, message):
                     )
         else:
             await client.send_sticker(chat_id=message.from_user.id, sticker='CAADBQADZQQAAn-26FfSFJs_uVTHfAI')
-            return
+            
         if not btn:
             return
             
