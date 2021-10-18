@@ -134,7 +134,7 @@ Possible Causes : 🤔
 
 ⭕️ Not released yet
 
-⭕️  Incorrect Spelling
+⭕️  <b>Incorrect Spelling</b>
 
 ⭕️ Unwanted texts in Msgs
 
