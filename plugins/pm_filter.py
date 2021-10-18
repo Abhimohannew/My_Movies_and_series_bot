@@ -130,10 +130,17 @@ async def group(client, message):
 
             text=f"""
 Sorry, No Movie/Series Related to the Given Word Was Found 🥺
+Possible Causes : 🤔
 
-<b>Please Go to Google and Confirm the Correct Spelling 🙏</b>
+⭕️ Not released yet
 
-Click Here To 👉 <a href="https://www.google.com">🔎 Search</a>""",
+⭕️  Incorrect Spelling
+
+⭕️ Unwanted texts in Msgs
+
+⭕ Asking theatre prints
+
+⭕ Not in my Database""",
             parse_mode="html",
 
             reply_to_message_id=message.message_id
