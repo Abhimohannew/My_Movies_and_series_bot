@@ -129,7 +129,7 @@ async def group(client, message):
             chat_id = message.chat.id,
 
             text=f"""
-(Sorry, No Movie/Series Related to the Given Word Was Found 🥺
+Sorry, No Movie/Series Related to the Given Word Was Found 🥺
 Possible Causes : 🤔
 
 ⭕️ Not released yet
@@ -140,7 +140,7 @@ Possible Causes : 🤔
 
 ⭕ Asking theatre prints
 
-⭕ Not in my Database""",del_in=20)
+⭕ Not in my Database"""
             parse_mode="html",
 
             reply_to_message_id=message.message_id
