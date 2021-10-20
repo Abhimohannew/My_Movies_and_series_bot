@@ -143,9 +143,9 @@ Possible Causes : 🤔
 ⭕ Not in my Database""",
             parse_mode="html",
 
-            reply_to_message_id=message.message_id
+            reply_to_message_id=message.message_id,
             
-        )    
+        del_in=20)    
             return
         if not btn:
             return
