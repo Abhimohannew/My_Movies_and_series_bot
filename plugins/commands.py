@@ -209,11 +209,6 @@ async def start(bot, cmd):
                         InlineKeyboardButton('𝓜𝔂 𝓓𝓮𝓿🧑‍💻', url='https://t.me/ff_new_movies_group'),
 
                         InlineKeyboardButton("𝐀𝐛𝐨𝐮𝐭🙂", callback_data="about")
-
-                    ],
-
-                    [   InlineKeyboardButton('➕ Add Me To Your Group ', url='https://t.me/RBMoviesBot?startgroup=true'),]
-
                 ]
 
             )
