@@ -99,10 +99,10 @@ async def filter(client, message):
         if API_KEY:
             poster=await get_poster(search)
             if poster:
-                await message.reply_photo(photo=poster, caption=f"<b>🎬 Title : {search}</b>\n🌟 7.5/10 | IMDb\n🎭 Genres: 🔪 Drama, Thriller\n🔸𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐁𝐲: {message.from_user.mention}\n⚜️ Uploaded by: **@ff_new_movies_group**\n💢𝑻𝒊𝒑𝒔:𝗜𝗳 𝘆𝗼𝘂 𝗱𝗼 𝗻𝗼𝘁 𝘀𝗲𝗲 𝘁𝗵𝗲 𝗿𝗲𝗾𝘂𝗲𝘀𝘁𝗲𝗱 𝐌𝐨𝐯𝐢𝐞𝐬/𝐒𝐞𝐫𝐢𝐞𝐬 𝗳𝗶𝗹𝗲, 𝗹𝗼𝗼𝗸 𝗮𝘁 𝗻𝗲𝘅𝘁 𝗽𝗮𝗴𝗲😁", reply_markup=InlineKeyboardMarkup(buttons))
+                await message.reply_photo(photo=poster, caption=f"<b>🎬 Title : {search}</b>\n🌟 7.5/10 | IMDb\n🎭 Genres: 🔪 Drama, Thriller\n⚜️ Uploaded by: **@ff_new_movies_group**\n💢𝑻𝒊𝒑𝒔:𝗜𝗳 𝘆𝗼𝘂 𝗱𝗼 𝗻𝗼𝘁 𝘀𝗲𝗲 𝘁𝗵𝗲 𝗿𝗲𝗾𝘂𝗲𝘀𝘁𝗲𝗱 𝐌𝐨𝐯𝐢𝐞𝐬/𝐒𝐞𝐫𝐢𝐞𝐬 𝗳𝗶𝗹𝗲, 𝗹𝗼𝗼𝗸 𝗮𝘁 𝗻𝗲𝘅𝘁 𝗽𝗮𝗴𝗲😁", reply_markup=InlineKeyboardMarkup(buttons))
 
             else:
-                await message.reply_text(f"<b>🎬 Title : {search}</b>\n🌟 8.7/10 | IMDb\n🎭 Genres: Drama, Climax Thriller\n🔸𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐁𝐲: {message.from_user.mention}\n⚜️ Uploaded by: **@ff_new_movies_group**\n💢𝑻𝒊𝒑𝒔:𝗜𝗳 𝘆𝗼𝘂 𝗱𝗼 𝗻𝗼𝘁 𝘀𝗲𝗲 𝘁𝗵𝗲 𝗿𝗲𝗾𝘂𝗲𝘀𝘁𝗲𝗱 𝐌𝐨𝐯𝐢𝐞𝐬/𝐒𝐞𝐫𝐢𝐞𝐬 𝗳𝗶𝗹𝗲, 𝗹𝗼𝗼𝗸 𝗮𝘁 𝗻𝗲𝘅𝘁 𝗽𝗮𝗴𝗲😁", disable_web_page_preview=True, reply_markup=InlineKeyboardMarkup(buttons))
+                await message.reply_text(f"<b>🎬 Title : {search}</b>\n🌟 8.7/10 | IMDb\n🎭 Genres: Drama, Climax Thriller\n⚜️ Uploaded by: **@ff_new_movies_group**\n💢𝑻𝒊𝒑𝒔:𝗜𝗳 𝘆𝗼𝘂 𝗱𝗼 𝗻𝗼𝘁 𝘀𝗲𝗲 𝘁𝗵𝗲 𝗿𝗲𝗾𝘂𝗲𝘀𝘁𝗲𝗱 𝐌𝐨𝐯𝐢𝐞𝐬/𝐒𝐞𝐫𝐢𝐞𝐬 𝗳𝗶𝗹𝗲, 𝗹𝗼𝗼𝗸 𝗮𝘁 𝗻𝗲𝘅𝘁 𝗽𝗮𝗴𝗲😁", disable_web_page_preview=True, reply_markup=InlineKeyboardMarkup(buttons))
             return
 @Client.on_message(filters.text & filters.group & filters.incoming & filters.chat(AUTH_GROUPS) if AUTH_GROUPS else filters.text & filters.group & filters.incoming)
 async def group(client, message):
