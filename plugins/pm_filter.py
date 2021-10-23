@@ -146,7 +146,7 @@ Possible Causes : 🤔
             reply_to_message_id=message.message_id
             
         )  
-           await send_message.delete()  
+           await send_message.del_in=5  
             return
         if not btn:
             return
