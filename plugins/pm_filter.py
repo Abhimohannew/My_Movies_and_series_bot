@@ -146,7 +146,6 @@ Possible Causes : 🤔
             reply_to_message_id=message.message_id
             
         )  
-           await asyncio.sleep(5)
            await send_message.delete()  
             return
         if not btn:
