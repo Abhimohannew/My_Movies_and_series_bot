@@ -182,9 +182,9 @@ async def start(bot, cmd):
 
     else:
 
-        await cmd.reply_video(
+        await cmd.reply_photo(
 
-            video="https://telegra.ph/file/7aea50dbba8f5f09173ff.mp4",
+            photo="https://telegra.ph/file/d44b103f8d9b3106f2cf3.jpg",
 
             caption=f"𝐘𝐨..𝐘𝐨..{cmd.from_user.mention} 🙋,I'm Powerful Auto-Filter Bot You Can Use Me As A Auto-filter in Your Group ....\n\nIts Easy To Use Me; Just Add Me To Your Group As Admin, Thats All, i will Provide Movies & Series There...🤓\n\n⚠️More Help Check Help Button Below\n\n©️MᴀɪɴᴛᴀɪɴᴇD Bʏ   <a href=tg://group?id=1001456780208>FF Group</a>",
 
