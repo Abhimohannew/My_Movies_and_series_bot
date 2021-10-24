@@ -193,7 +193,7 @@ async def start(bot, cmd):
         await cmd.reply_photo(
 
             photo=f"{random.choice(PHOTO)}",
-            caption=START_TXT.format(message.from_user.mention),   
+            caption=START_TXT.format(.from_user.mention),   
             parse_mode="html",
             reply_markup=InlineKeyboardMarkup(
 
@@ -401,6 +401,7 @@ async def bot_info(bot, message):
 <b>○ Build Status :</b> <code>V2.1 [BETA]</code>
 
 <b>📜 Quote :</b> <code>That which does not kill us makes us stronger ... </code>""".format(update.from_user.mention), reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+
 
 START_TXT = """𝙷𝙴𝙻𝙻𝙾 {}
 
