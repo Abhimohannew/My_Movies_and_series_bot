@@ -1,5 +1,5 @@
 import os
-
+import random
 import logging
 
 from pyrogram import Client, filters
@@ -13,6 +13,14 @@ from utils import Media, get_file_details
 from pyrogram.errors import UserNotParticipant
 
 logger = logging.getLogger(__name__)
+
+PHOTO =[
+    "https://telegra.ph/file/3a29a7aea3c5e67b66000.jpg",
+    "https://telegra.ph/file/fc190d970d2ed8cd7b064.jpg",
+    "https://telegra.ph/file/c6f771f6bbdf8aee2d972.jpg",
+    "https://telegra.ph/file/fb4c927643bb0e1b26bfc.jpg",
+    "https://telegra.ph/file/16f2010ee070c57e21381.jpg"
+]
 
 @Client.on_message(filters.command("start"))
 
@@ -184,10 +192,9 @@ async def start(bot, cmd):
 
         await cmd.reply_photo(
 
-            photo="https://telegra.ph/file/d44b103f8d9b3106f2cf3.jpg",
-
-            caption=f"𝐘𝐨..𝐘𝐨..{cmd.from_user.mention} 🙋,I'm Powerful Auto-Filter Bot You Can Use Me As A Auto-filter in Your Group ....\n\nIts Easy To Use Me; Just Add Me To Your Group As Admin, Thats All, i will Provide Movies & Series There...🤓\n\n⚠️More Help Check Help Button Below\n\n©️MᴀɪɴᴛᴀɪɴᴇD Bʏ   <a href=tg://group?id=1001456780208>FF Group</a>",
-
+            photo=f"{random.choice(PHOTO)}",
+            caption=START_TXT.format(message.from_user.mention),   
+            parse_mode="html",
             reply_markup=InlineKeyboardMarkup(
 
                 [
