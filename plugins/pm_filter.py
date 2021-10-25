@@ -3,10 +3,21 @@ from info import AUTH_CHANNEL, AUTH_USERS, CUSTOM_FILE_CAPTION, API_KEY, AUTH_GR
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 from pyrogram import Client, filters
 import re
+import random
 from pyrogram.errors import UserNotParticipant
 from utils import get_filter_results, get_file_details, is_subscribed, get_poster
 BUTTONS = {}
 BOT = {}
+
+RATING = ["5.1 | IMDB", "6.2 | IMDB", "7.3 | IMDB", "8.4 | IMDB", "9.5 | IMDB", ]
+GENRES = ["fun, fact",
+         "Thriller, Comedy",
+          "Family, Drama",
+          "Drama, Comedy",
+          "Action, Adventure",
+          "Film Noir",
+          "Documentary"]
+
 @Client.on_message(filters.text & filters.private & filters.incoming & filters.user(AUTH_USERS) if AUTH_USERS else filters.text & filters.private & filters.incoming)
 async def filter(client, message):
     if message.text.startswith("/"):
@@ -80,10 +91,10 @@ async def filter(client, message):
             if API_KEY:
                 poster=await get_poster(search)
             if poster:
-                await message.reply_photo(photo=poster, caption=f"<b>🎬 Title : {search}</b>\n🌟 7.5/10 | IMDb\n🎭 Genres: 🔪 Drama, Thriller\n⚜️ Uploaded by: **@ff_new_movies_group**", reply_markup=InlineKeyboardMarkup(buttons))
+                await message.reply_photo(photo=poster, caption=f"<b>🎬 Title : {search}</b>\n**🌟 Rating:** {random.choice(RATING)}\n**🎭 Genre:** {random.choice(GENRES)}\n⚜️ Uploaded by: **@ff_new_movies_group**", reply_markup=InlineKeyboardMarkup(buttons))
 
             else:
-                await message.reply_text(f"<b>🎬 Title : {search}</b>\n🌟 8.7/10 | IMDb\n🎭 Genres: Drama, Climax Thriller\n⚜️ Uploaded by: **@ff_new_movies_group**", disable_web_page_preview=True, reply_markup=InlineKeyboardMarkup(buttons))
+                await message.reply_text(f"<b>🎬 Title : {search}</b>\n**🌟 Rating:** {random.choice(RATING)}\n**🎭 Genre:** {random.choice(GENRES)}\n⚜️ Uploaded by: **@ff_new_movies_group**", disable_web_page_preview=True, reply_markup=InlineKeyboardMarkup(buttons))
             return
 
         data = BUTTONS[keyword]
@@ -99,10 +110,10 @@ async def filter(client, message):
         if API_KEY:
             poster=await get_poster(search)
             if poster:
-                await message.reply_photo(photo=poster, caption=f"<b>🎬 Title : {search}</b>\n🌟 7.5/10 | IMDb\n🎭 Genres: 🔪 Drama, Thriller\n⚜️ Uploaded by: **@ff_new_movies_group**\n💢𝑻𝒊𝒑𝒔:𝗜𝗳 𝘆𝗼𝘂 𝗱𝗼 𝗻𝗼𝘁 𝘀𝗲𝗲 𝘁𝗵𝗲 𝗿𝗲𝗾𝘂𝗲𝘀𝘁𝗲𝗱 𝐌𝐨𝐯𝐢𝐞𝐬/𝐒𝐞𝐫𝐢𝐞𝐬 𝗳𝗶𝗹𝗲, 𝗹𝗼𝗼𝗸 𝗮𝘁 𝗻𝗲𝘅𝘁 𝗽𝗮𝗴𝗲😁", reply_markup=InlineKeyboardMarkup(buttons))
+                await message.reply_photo(photo=poster, caption=f"<b>🎬 Title : {search}</b>\n**🌟 Rating:** {random.choice(RATING)}\n**🎭 Genre:** {random.choice(GENRES)}\n⚜️ Uploaded by: **@ff_new_movies_group**\n💢𝑻𝒊𝒑𝒔:𝗜𝗳 𝘆𝗼𝘂 𝗱𝗼 𝗻𝗼𝘁 𝘀𝗲𝗲 𝘁𝗵𝗲 𝗿𝗲𝗾𝘂𝗲𝘀𝘁𝗲𝗱 𝐌𝐨𝐯𝐢𝐞𝐬/𝐒𝐞𝐫𝐢𝐞𝐬 𝗳𝗶𝗹𝗲, 𝗹𝗼𝗼𝗸 𝗮𝘁 𝗻𝗲𝘅𝘁 𝗽𝗮𝗴𝗲😁", reply_markup=InlineKeyboardMarkup(buttons))
 
             else:
-                await message.reply_text(f"<b>🎬 Title : {search}</b>\n🌟 8.7/10 | IMDb\n🎭 Genres: Drama, Climax Thriller\n⚜️ Uploaded by: **@ff_new_movies_group**\n💢𝑻𝒊𝒑𝒔:𝗜𝗳 𝘆𝗼𝘂 𝗱𝗼 𝗻𝗼𝘁 𝘀𝗲𝗲 𝘁𝗵𝗲 𝗿𝗲𝗾𝘂𝗲𝘀𝘁𝗲𝗱 𝐌𝐨𝐯𝐢𝐞𝐬/𝐒𝐞𝐫𝐢𝐞𝐬 𝗳𝗶𝗹𝗲, 𝗹𝗼𝗼𝗸 𝗮𝘁 𝗻𝗲𝘅𝘁 𝗽𝗮𝗴𝗲😁", disable_web_page_preview=True, reply_markup=InlineKeyboardMarkup(buttons))
+                await message.reply_text(f"<b>🎬 Title : {search}</b>\n**🌟 Rating:** {random.choice(RATING)}\n**🎭 Genre:** {random.choice(GENRES)}\n⚜️ Uploaded by: **@ff_new_movies_group**\n💢𝑻𝒊𝒑𝒔:𝗜𝗳 𝘆𝗼𝘂 𝗱𝗼 𝗻𝗼𝘁 𝘀𝗲𝗲 𝘁𝗵𝗲 𝗿𝗲𝗾𝘂𝗲𝘀𝘁𝗲𝗱 𝐌𝐨𝐯𝐢𝐞𝐬/𝐒𝐞𝐫𝐢𝐞𝐬 𝗳𝗶𝗹𝗲, 𝗹𝗼𝗼𝗸 𝗮𝘁 𝗻𝗲𝘅𝘁 𝗽𝗮𝗴𝗲😁", disable_web_page_preview=True, reply_markup=InlineKeyboardMarkup(buttons))
             return
 @Client.on_message(filters.text & filters.group & filters.incoming & filters.chat(AUTH_GROUPS) if AUTH_GROUPS else filters.text & filters.group & filters.incoming)
 async def group(client, message):
@@ -166,10 +177,10 @@ Possible Causes : 🤔
             if API_KEY:
                 poster=await get_poster(search)
             if poster:
-                await message.reply_photo(photo=poster, caption=f"<b>🎬 Title : {search}</b>\n🌟 7.5/10 | IMDb\n🎭 Genres: 🔪 Drama, Thriller\n⚜️ Uploaded by: **@ff_new_movies_group**\n💢𝑻𝒊𝒑𝒔:𝗜𝗳 𝘆𝗼𝘂 𝗱𝗼 𝗻𝗼𝘁 𝘀𝗲𝗲 𝘁𝗵𝗲 𝗿𝗲𝗾𝘂𝗲𝘀𝘁𝗲𝗱 𝐌𝐨𝐯𝐢𝐞𝐬/𝐒𝐞𝐫𝐢𝐞𝐬 𝗳𝗶𝗹𝗲, 𝗹𝗼𝗼𝗸 𝗮𝘁 𝗻𝗲𝘅𝘁 𝗽𝗮𝗴𝗲😁", reply_markup=InlineKeyboardMarkup(buttons))
+                await message.reply_photo(photo=poster, caption=f"<b>🎬 Title : {search}</b>\n**🌟 Rating:** {random.choice(RATING)}\n**🎭 Genre:** {random.choice(GENRES)}\n⚜️ Uploaded by: **@ff_new_movies_group**\n💢𝑻𝒊𝒑𝒔:𝗜𝗳 𝘆𝗼𝘂 𝗱𝗼 𝗻𝗼𝘁 𝘀𝗲𝗲 𝘁𝗵𝗲 𝗿𝗲𝗾𝘂𝗲𝘀𝘁𝗲𝗱 𝐌𝐨𝐯𝐢𝐞𝐬/𝐒𝐞𝐫𝐢𝐞𝐬 𝗳𝗶𝗹𝗲, 𝗹𝗼𝗼𝗸 𝗮𝘁 𝗻𝗲𝘅𝘁 𝗽𝗮𝗴𝗲😁", reply_markup=InlineKeyboardMarkup(buttons))
 
             else:
-                await message.reply_text(f"<b>🎬 Title : {search}</b>\n🌟 8.7/10 | IMDb\n🎭 Genres: Drama, Climax Thriller\n⚜️ Uploaded by: **@ff_new_movies_group**\n💢𝑻𝒊𝒑𝒔:𝗜𝗳 𝘆𝗼𝘂 𝗱𝗼 𝗻𝗼𝘁 𝘀𝗲𝗲 𝘁𝗵𝗲 𝗿𝗲𝗾𝘂𝗲𝘀𝘁𝗲𝗱 𝐌𝐨𝐯𝐢𝐞𝐬/𝐒𝐞𝐫𝐢𝐞𝐬 𝗳𝗶𝗹𝗲, 𝗹𝗼𝗼𝗸 𝗮𝘁 𝗻𝗲𝘅𝘁 𝗽𝗮𝗴𝗲😁", disable_web_page_preview=True, reply_markup=InlineKeyboardMarkup(buttons))
+                await message.reply_text(f"<b>🎬 Title : {search}</b>\n**🌟 Rating:** {random.choice(RATING)}\n**🎭 Genre:** {random.choice(GENRES)}\n⚜️ Uploaded by: **@ff_new_movies_group**\n💢𝑻𝒊𝒑𝒔:𝗜𝗳 𝘆𝗼𝘂 𝗱𝗼 𝗻𝗼𝘁 𝘀𝗲𝗲 𝘁𝗵𝗲 𝗿𝗲𝗾𝘂𝗲𝘀𝘁𝗲𝗱 𝐌𝐨𝐯𝐢𝐞𝐬/𝐒𝐞𝐫𝐢𝐞𝐬 𝗳𝗶𝗹𝗲, 𝗹𝗼𝗼𝗸 𝗮𝘁 𝗻𝗲𝘅𝘁 𝗽𝗮𝗴𝗲😁", disable_web_page_preview=True, reply_markup=InlineKeyboardMarkup(buttons))
             return
 
         data = BUTTONS[keyword]
@@ -185,10 +196,10 @@ Possible Causes : 🤔
         if API_KEY:
             poster=await get_poster(search)
             if poster:
-                await message.reply_photo(photo=poster, caption=f"<b>🎬 Title : {search}</b>\n🌟 7.5/10 | IMDb\n🎭 Genres: 🔪 Drama, Thriller\n⚜️ Uploaded by: **@ff_new_movies_group**\n💢𝑻𝒊𝒑𝒔:𝗜𝗳 𝘆𝗼𝘂 𝗱𝗼 𝗻𝗼𝘁 𝘀𝗲𝗲 𝘁𝗵𝗲 𝗿𝗲𝗾𝘂𝗲𝘀𝘁𝗲𝗱 𝐌𝐨𝐯𝐢𝐞𝐬/𝐒𝐞𝐫𝐢𝐞𝐬 𝗳𝗶𝗹𝗲, 𝗹𝗼𝗼𝗸 𝗮𝘁 𝗻𝗲𝘅𝘁 𝗽𝗮𝗴𝗲😁", reply_markup=InlineKeyboardMarkup(buttons))
+                await message.reply_photo(photo=poster, caption=f"<b>🎬 Title : {search}</b>\n**🌟 Rating:** {random.choice(RATING)}\n**🎭 Genre:** {random.choice(GENRES)}\n⚜️ Uploaded by: **@ff_new_movies_group**\n💢𝑻𝒊𝒑𝒔:𝗜𝗳 𝘆𝗼𝘂 𝗱𝗼 𝗻𝗼𝘁 𝘀𝗲𝗲 𝘁𝗵𝗲 𝗿𝗲𝗾𝘂𝗲𝘀𝘁𝗲𝗱 𝐌𝐨𝐯𝐢𝐞𝐬/𝐒𝐞𝐫𝐢𝐞𝐬 𝗳𝗶𝗹𝗲, 𝗹𝗼𝗼𝗸 𝗮𝘁 𝗻𝗲𝘅𝘁 𝗽𝗮𝗴𝗲😁", reply_markup=InlineKeyboardMarkup(buttons))
 
             else:
-                await message.reply_text(f"<b>🎬 Title : {search}</b>\n🌟 8.7/10 | IMDb\n🎭 Genres: Document, Drama, Climax Thriller\n⚜️ Uploaded by: **@ff_new_movies_group**\n💢𝑻𝒊𝒑𝒔:𝗜𝗳 𝘆𝗼𝘂 𝗱𝗼 𝗻𝗼𝘁 𝘀𝗲𝗲 𝘁𝗵𝗲 𝗿𝗲𝗾𝘂𝗲𝘀𝘁𝗲𝗱 𝐌𝐨𝐯𝐢𝐞𝐬/𝐒𝐞𝐫𝐢𝐞𝐬 𝗳𝗶𝗹𝗲, 𝗹𝗼𝗼𝗸 𝗮𝘁 𝗻𝗲𝘅𝘁 𝗽𝗮𝗴𝗲😁", disable_web_page_preview=True, reply_markup=InlineKeyboardMarkup(buttons))
+                await message.reply_text(f"<b>🎬 Title : {search}</b>\n**🌟 Rating:** {random.choice(RATING)}\n**🎭 Genre:** {random.choice(GENRES)}\n⚜️ Uploaded by: **@ff_new_movies_group**\n💢𝑻𝒊𝒑𝒔:𝗜𝗳 𝘆𝗼𝘂 𝗱𝗼 𝗻𝗼𝘁 𝘀𝗲𝗲 𝘁𝗵𝗲 𝗿𝗲𝗾𝘂𝗲𝘀𝘁𝗲𝗱 𝐌𝐨𝐯𝐢𝐞𝐬/𝐒𝐞𝐫𝐢𝐞𝐬 𝗳𝗶𝗹𝗲, 𝗹𝗼𝗼𝗸 𝗮𝘁 𝗻𝗲𝘅𝘁 𝗽𝗮𝗴𝗲😁", disable_web_page_preview=True, reply_markup=InlineKeyboardMarkup(buttons))
             return
 
     
