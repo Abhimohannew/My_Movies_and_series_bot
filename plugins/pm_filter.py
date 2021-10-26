@@ -14,8 +14,14 @@ GENRES = ["fun, fact",
          "Thriller, Comedy",
           "Family, Drama",
           "Drama, Comedy",
+          "Crime, Thriller",
+          "Mystery, Thriller",
+          "Horror, Thriller",
+          "Crime, Mystery",
+          "Drama, Romance",
+          "Comedy, Romance",
           "Action, Adventure",
-          "Film Noir",
+          "Action, Sci-Fi",
           "Documentary"]
 
 @Client.on_message(filters.text & filters.private & filters.incoming & filters.user(AUTH_USERS) if AUTH_USERS else filters.text & filters.private & filters.incoming)
