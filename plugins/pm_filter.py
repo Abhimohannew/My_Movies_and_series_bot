@@ -25,6 +25,7 @@ GENRES = ["fun, fact",
           "Crime, Mystery",
           "Family, Entertainment",
           "Action, Fantasy",
+          "Action,
           "Documentary"]
 
 @Client.on_message(filters.text & filters.private & filters.incoming & filters.user(AUTH_USERS) if AUTH_USERS else filters.text & filters.private & filters.incoming)
