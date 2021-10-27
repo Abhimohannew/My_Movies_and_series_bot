@@ -23,6 +23,7 @@ GENRES = ["fun, fact",
           "Action, Adventure",
           "Action, Sci-Fi",
           "Crime, Mystery",
+          "Family, Entertainment",
           "Action, Fantasy",
           "Documentary"]
 
