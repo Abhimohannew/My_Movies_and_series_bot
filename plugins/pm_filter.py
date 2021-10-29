@@ -165,7 +165,8 @@ Possible Causes : 🤔
             parse_mode="html",
 
             reply_to_message_id=message.message_id
-           await asyncio.sleep(5) await send_message.delete() 
+           await asyncio.sleep(5) 
+           await send_message.delete() 
         )  
             return
         if not btn:
