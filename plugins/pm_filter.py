@@ -51,7 +51,7 @@ async def filter(client, message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("🍿 Join Our Group ", url='https://t.me/ff_new_movies_group')
+                            InlineKeyboardButton(" Join Our Group ", url='https://t.me/ff_new_movies_group')
                         ]
                     ]
                 ),
