@@ -70,7 +70,7 @@ async def start(bot, cmd):
 
                             [
 
-                                InlineKeyboardButton("🍿 Join Our Group", url='https://t.me/ff_new_movies_group')
+                                InlineKeyboardButton("🍿 Join Our Main Channel", url='https://t.me/FF_LINK')
 
                             ],
 
@@ -140,7 +140,7 @@ async def start(bot, cmd):
 
                     [
 
-                        InlineKeyboardButton('🍿Group', url='https://t.me/ff_new_movies_group')
+                        InlineKeyboardButton('Main Channel', url='https://t.me/FF_LINK')
 
                     ]
 
@@ -170,7 +170,7 @@ async def start(bot, cmd):
 
             chat_id=cmd.from_user.id,
 
-            text="**Hey..Bruh🙋‍♂️...Please Join Our Group to use this Bot!**",
+            text="**Hey..Bruh🙋‍♂️...Please Join Our Main Channel to use this Bot!**",
 
             reply_markup=InlineKeyboardMarkup(
 
@@ -178,7 +178,7 @@ async def start(bot, cmd):
 
                     [
 
-                        InlineKeyboardButton("🍿 Our Group ", url='https://t.me/ff_new_movies_group')
+                        InlineKeyboardButton("Main Channel", url='https://t.me/ff_new_movies_group')
 
                     ]
 
@@ -207,13 +207,13 @@ async def start(bot, cmd):
 
                         InlineKeyboardButton("𝐒𝐞𝐚𝐫𝐜𝐡 𝐇𝐞𝐫𝐞 🔎", switch_inline_query_current_chat=''),
 
-                        InlineKeyboardButton("𝐆𝐫𝐨𝐮𝐩 🍿", url='https://t.me/ff_new_movies_group')
+                        InlineKeyboardButton("Main Channel", url='https://t.me/FF_LINK')
 
                     ],
 
                     [
 
-                        InlineKeyboardButton('𝓜𝔂 𝓓𝓮𝓿🧑‍💻', url='https://t.me/ff_new_movies_group'),
+                        InlineKeyboardButton('𝓜𝔂 𝓓𝓮𝓿🧑‍💻', url='https://t.me/FF_LINK'),
 
                         InlineKeyboardButton("𝐀𝐛𝐨𝐮𝐭🙂", callback_data="about")
                         
