@@ -201,13 +201,13 @@ async def start(bot, cmd):
 
                     [
 
-                        InlineKeyboardButton('❔ 𝙷𝚘𝚠 𝚃𝚘 𝚄𝚜𝚎 𝙼𝚎 ❔', url='https://t.me/ff_new_movies_group')
+                        InlineKeyboardButton('❔ 𝙷𝚘𝚠 𝚃𝚘 𝚄𝚜𝚎 𝙼𝚎 ❔', url='https://t.me/FF_LINK')
 
                     ],[                    
 
                         InlineKeyboardButton("𝐒𝐞𝐚𝐫𝐜𝐡 𝐇𝐞𝐫𝐞 🔎", switch_inline_query_current_chat=''),
 
-                        InlineKeyboardButton("Main Channel", url='https://t.me/FF_LINK')
+                        InlineKeyboardButton("𝙼𝚊𝚒𝚗 𝙲𝚑𝚊𝚗𝚗𝚎𝚕", url='https://t.me/FF_LINK')
 
                     ],
 
@@ -382,7 +382,7 @@ async def bot_info(bot, message):
 
 <b>○ My Name :</b> <code>FF Series Searching Bot</code>
 
-<b>○ Creator :</b> <a href="https://t.me/new_moviyzz">Master</a>
+<b>○ Creator :</b> <a href="https://t.me/FF_LINK">Master</a>
 
 <b>○ Credits :</b> <code>Everyone in this journey</code>
 
@@ -405,6 +405,6 @@ async def bot_info(bot, message):
 
 START_TXT = """𝙷𝙴𝙻𝙻𝙾 {}
 
-𝙼𝚈 𝙽𝙰𝙼𝙴 𝙸𝚂 𝐓𝐡𝐚𝐥𝐚𝐩𝐚𝐭𝐡𝐲, 𝙸 𝙲𝙰𝙽 𝙿𝚁𝙾𝚅𝙸𝙳𝙴 𝙼𝙾𝚅𝙸𝙴𝚂 𝙰𝙽𝙳 𝚂𝙴𝚁𝙸𝙴𝚂 𝙸𝙽 𝓕𝓘𝓛𝓜 𝓕𝓐𝓒𝓣𝓞𝓡𝓨 Movies Request GROUP
+𝙼𝚈 𝙽𝙰𝙼𝙴 𝙸𝚂 𝐏𝐑𝐎𝐅𝐄𝐒𝐒𝐎𝐑, 𝙸 𝙲𝙰𝙽 𝙿𝚁𝙾𝚅𝙸𝙳𝙴 𝚂𝙴𝚁𝙸𝙴𝚂.Just Send Me The Series Name.
 
 """
