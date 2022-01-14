@@ -15,11 +15,11 @@ from pyrogram.errors import UserNotParticipant
 logger = logging.getLogger(__name__)
 
 PHOTO =[
-    "https://telegra.ph/file/3a29a7aea3c5e67b66000.jpg",
-    "https://telegra.ph/file/fc190d970d2ed8cd7b064.jpg",
-    "https://telegra.ph/file/c6f771f6bbdf8aee2d972.jpg",
-    "https://telegra.ph/file/fb4c927643bb0e1b26bfc.jpg",
-    "https://telegra.ph/file/16f2010ee070c57e21381.jpg"
+    "https://telegra.ph/file/61998c8acf3f30a18ab20.jpg",
+    "https://telegra.ph/file/4c8ededf4b85cd8e4de37.jpg",
+    "https://telegra.ph/file/0b1650b9dce10c1ba62c6.jpg",
+    "https://telegra.ph/file/1b357e055def5ce946044.jpg",
+    "https://telegra.ph/file/496403a1dacb358b0b5e5.jpg"
 ]
 
 @Client.on_message(filters.command("start"))
@@ -368,7 +368,7 @@ async def bot_info(bot, message):
 
         [
 
-            InlineKeyboardButton('Group♻️', url='https://t.me/ff_new_movies_group'),
+            InlineKeyboardButton('Main Channel♻️', url='https://t.me/new_moviyzz'),
 
             InlineKeyboardButton('Channel🍿', url='https://t.me/new_moviyzz')
 
@@ -380,9 +380,9 @@ async def bot_info(bot, message):
 
     
 
-<b>○ My Name :</b> <code>Movies & Series Searching Bot</code>
+<b>○ My Name :</b> <code>FF Series Searching Bot</code>
 
-<b>○ Creator :</b> <a href="https://t.me/ff_new_movies_group">Master</a>
+<b>○ Creator :</b> <a href="https://t.me/new_moviyzz">Master</a>
 
 <b>○ Credits :</b> <code>Everyone in this journey</code>
 
