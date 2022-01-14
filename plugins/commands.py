@@ -178,7 +178,7 @@ async def start(bot, cmd):
 
                     [
 
-                        InlineKeyboardButton("Main Channel", url='https://t.me/ff_new_movies_group')
+                        InlineKeyboardButton("Main Channel", url='https://t.me/FF_LINK')
 
                     ]
 
@@ -368,9 +368,9 @@ async def bot_info(bot, message):
 
         [
 
-            InlineKeyboardButton('Main Channel♻️', url='https://t.me/new_moviyzz'),
+            InlineKeyboardButton('Main Channel♻️', url='https://t.me/FF_LINK'),
 
-            InlineKeyboardButton('Channel🍿', url='https://t.me/new_moviyzz')
+            InlineKeyboardButton('Update Channel🍿', url='https://t.me/new_moviyzz')
 
         ]
 
