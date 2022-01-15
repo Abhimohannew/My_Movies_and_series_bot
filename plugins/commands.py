@@ -216,10 +216,10 @@ async def start(bot, cmd):
                         InlineKeyboardButton('𝓜𝔂 𝓓𝓮𝓿🧑‍💻', url='https://t.me/FF_LINK'),
 
                         InlineKeyboardButton("𝐀𝐛𝐨𝐮𝐭🙂", callback_data="about")
-                        
-                   ],     
+                    
+                    ],
 
-                    InlineKeyboardButton('Share and Support',url='https://telegram.me/share/url?url=t.me/FF_Series_Bot')
+                   [ InlineKeyboardButton('Share and Support',url='https://telegram.me/share/url?url=t.me/FF_Series_Bot'),]
                 ]
 
             )
