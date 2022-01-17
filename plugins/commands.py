@@ -207,7 +207,7 @@ async def start(bot, cmd):
 
                         InlineKeyboardButton("𝐒𝐞𝐚𝐫𝐜𝐡 𝐇𝐞𝐫𝐞 🔎", switch_inline_query_current_chat=''),
 
-                        InlineKeyboardButton("𝙼𝚊𝚒𝚗 𝙲𝚑𝚊𝚗𝚗𝚎𝚕", url='https://t.me/FF_LINK')
+                        InlineKeyboardButton("🍿𝐌𝐨𝐯𝐢𝐞𝐬 𝐁𝐨𝐭", url='https://t.me/RBMoviesBot')
 
                     ],
 
