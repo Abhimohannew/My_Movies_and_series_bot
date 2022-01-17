@@ -140,7 +140,7 @@ async def start(bot, cmd):
 
                     [
 
-                        InlineKeyboardButton('Main Channel', url='https://t.me/FF_LINK')
+                        InlineKeyboardButton('🍿𝐌𝐨𝐯𝐢𝐞𝐬 𝐁𝐨𝐭', url='https://t.me/RBMoviesBot')
 
                     ]
 
@@ -178,7 +178,7 @@ async def start(bot, cmd):
 
                     [
 
-                        InlineKeyboardButton("Main Channel", url='https://t.me/FF_LINK')
+                        InlineKeyboardButton("🍿𝐌𝐨𝐯𝐢𝐞𝐬 𝐁𝐨𝐭", url='https://t.me/RBMoviesBot')
 
                     ]
 
