@@ -62,7 +62,7 @@ async def filter(client, message):
 
                         [
 
-                            InlineKeyboardButton("🤖 Join Updates Channel", url=invite_link.invite_link)
+                            InlineKeyboardButton("🤖 Join Update Channel", url=invite_link.invite_link)
 
                         ]
 
