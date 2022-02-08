@@ -201,7 +201,7 @@ async def start(bot, cmd):
 
                     [
 
-                        InlineKeyboardButton('❔ 𝙷𝚘𝚠 𝚃𝚘 𝚄𝚜𝚎 𝙼𝚎 ❔', url='https://t.me/FF_LINK')
+                        InlineKeyboardButton('❔ 𝙷𝚘𝚠 𝚃𝚘 𝚄𝚜𝚎 𝙼𝚎 ❔', url='https://t.me/FF_LINK/25')
 
                     ],[                    
 
