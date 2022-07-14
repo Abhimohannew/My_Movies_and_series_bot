@@ -70,7 +70,7 @@ async def start(bot, cmd):
 
                             [
 
-                                InlineKeyboardButton("🍿 Join Our Main Channel", url='https://t.me/FF_LINK')
+                                InlineKeyboardButton("🍿 Join Our Main Channel", url='https://t.me/FF_MAIN')
 
                             ],
 
@@ -213,7 +213,7 @@ async def start(bot, cmd):
 
                     [
 
-                        InlineKeyboardButton('𝓜𝔂 𝓓𝓮𝓿🧑‍💻', url='https://t.me/FF_LINK'),
+                        InlineKeyboardButton('𝓜𝔂 𝓓𝓮𝓿🧑‍💻', url='https://t.me/FF_MAIN'),
 
                         InlineKeyboardButton("𝐀𝐛𝐨𝐮𝐭🙂", callback_data="about")
                     
@@ -382,7 +382,7 @@ async def bot_info(bot, message):
 
 <b>○ My Name :</b> <code>FF Series Searching Bot</code>
 
-<b>○ Creator :</b> <a href="https://t.me/FF_LINK">Master</a>
+<b>○ Creator :</b> <a href="https://t.me/FF_MAIN">Master</a>
 
 <b>○ Credits :</b> <code>Everyone in this journey</code>
 
