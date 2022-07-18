@@ -201,7 +201,7 @@ async def start(bot, cmd):
 
                     [
 
-                        InlineKeyboardButton('❔ 𝙷𝚘𝚠 𝚃𝚘 𝚄𝚜𝚎 𝙼𝚎 ❔', url='https://t.me/FF_LINK/25')
+                        InlineKeyboardButton('❔ 𝙷𝚘𝚠 𝚃𝚘 𝚄𝚜𝚎 𝙼𝚎 ❔', url='https://t.me/FF_MAIN/6')
 
                     ],[                    
 
@@ -219,7 +219,7 @@ async def start(bot, cmd):
                     
                     ],
 
-                   [ InlineKeyboardButton('How to Use Me 🤔',url='https://t.me/FF_MAIN/6'),]
+                   [ InlineKeyboardButton('Share & Support',url='https://telegram.me/share/url?url=t.me/FF_Series_Bot'),]
                 ]
 
             )
